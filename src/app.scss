@@ -1,0 +1,26 @@
+.app{
+  height: 100vh;
+
+  .sections{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: orange;
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    // snap scrolling 
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // firefox
+    &::-webkit-scrollbar{ // for everyother web app
+      display: none;
+    }
+
+    // for each element inside of the sections
+    > * {
+      width: 100vw;
+      height: calc(100vh - 70px);
+      // snaps the scroll to the start on the section
+      scroll-snap-align: start;
+    }
+  }
+}
