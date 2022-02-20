@@ -14,7 +14,7 @@ export default function Intro() {
       showCursor: true, 
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Project Manager', 'Software Developer', 'Designer'], 
+      strings: ['Project Manager','Scrum Master', 'Software Developer', 'Designer', 'Coach', 'Brother', 'Husband'], 
     })
   },[])
   return (
@@ -29,7 +29,7 @@ export default function Intro() {
           <h2>السلام عليكم</h2>
           <h2>My name is</h2>
           <h1>Hisham Raihan</h1>
-          <h3>What I Do: <span ref={textRef}></span></h3>
+          <h3><span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
