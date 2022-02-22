@@ -8,6 +8,7 @@ import Contact from './components/contact/Contact'
 import './app.scss'
 import { useState } from 'react'
 import Menu from './components/menu/Menu'
+// import ParticlesBackground from './components/particles/ParticlesBackground'
 
 
 function App() {
@@ -15,7 +16,10 @@ function App() {
 
 
   return (
+    <React.Fragment>
+    {/* <ParticlesBackground /> */}
     <div className="app">
+      {/* <ParticlesBackground /> */}
    <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
    <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
    <div className="sections">
@@ -26,6 +30,7 @@ function App() {
      <Contact />
    </div>
     </div>
+    </React.Fragment>
   );
 }
 

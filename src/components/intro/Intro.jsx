@@ -2,6 +2,7 @@ import React from 'react'
 import './intro.scss'
   import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
+// import {KeyboardArrowDown} from '@material-ui/icons'
 
 
 export default function Intro() {
@@ -14,9 +15,10 @@ export default function Intro() {
       showCursor: true, 
       backDelay: 1500,
       backSpeed: 60,
-      strings: ['Project Manager','Scrum Master', 'Software Developer', 'Designer', 'Coach', 'Brother', 'Husband'], 
+      strings: ['Project Manager','Dancer','Scrum Master', 'Software Developer', 'Designer', 'Coach', 'Brother', 'Husband',  'Rapper', 'Pianist', 'Flight Instructor', 'Chef', 'Spartan', 'What Else?'], 
     })
   },[])
+  // use effect will work just one time, because we have an empty dependency
   return (
     <div className='intro' id='intro'>
       <div className="left">
@@ -33,6 +35,7 @@ export default function Intro() {
         </div>
         <a href="#portfolio">
           <img src="assets/down.png" alt="" />
+          {/* <KeyboardArrowDown className='down'/> */}
         </a>
       </div>
     </div>

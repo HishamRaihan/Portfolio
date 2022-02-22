@@ -1,9 +1,12 @@
 import React from 'react'
 import './topbar.scss'
 import {Person, Mail, LinkedIn, GitHub} from '@material-ui/icons'
+import ParticlesBackground from '../particles/ParticlesBackground'
 
 export default function Topbar({menuOpen, setMenuOpen}) {
   return (
+    <React.Fragment>
+      <ParticlesBackground />
     <div className={'topbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
           <div className="left">
@@ -34,5 +37,6 @@ export default function Topbar({menuOpen, setMenuOpen}) {
           </div>
       </div>
     </div>
+    </React.Fragment>
   )
 }

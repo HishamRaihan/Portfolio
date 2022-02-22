@@ -1,8 +1,12 @@
 import React from 'react'
+// import ParticlesBackground from '../particles/ParticlesBackground'
 import './menu.scss'
 
+// in menu background add interactive galaxy ************* Dont Forget
 export default function Menu({menuOpen, setMenuOpen}) {
   return (
+    <React.Fragment>
+{/* <ParticlesBackground /> */}
     <div className={'menu ' + (menuOpen && 'active')}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
@@ -22,5 +26,6 @@ export default function Menu({menuOpen, setMenuOpen}) {
         </li>
       </ul>
     </div>
+    </React.Fragment>
   )
 }
