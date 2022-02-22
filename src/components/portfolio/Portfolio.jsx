@@ -71,8 +71,9 @@ const [data, setData]= useState([])
         </div> */}
        {data.map((stuff) =>(
          <div className="item">
-         <img src={stuff.img} alt="" />
-         <h3>{stuff.title}</h3>
+         <img src={stuff.img} alt=""/>
+         <a href={stuff.site}>{stuff.title}</a>
+         {/* <h3 href={stuff.site}>{stuff.title} </h3> */}
          {/* <h2>Description</h2> */}
          </div>
        ))}

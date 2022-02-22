@@ -4,18 +4,21 @@ export const featuredPortfolio = [
     title: "Social Media App",
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    site: "https://team-rendering.github.io/project-frontend/"
   },
   {
     id: 2,
     title: "Tic Tac Toe",
     img:
       "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+    site:"https://hishamraihan.github.io/TicTacToe-GAProject/"
   },
   {
     id: 3,
     title: "The Travel Blog",
     img:
       "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+    site:"https://hishamraihan.github.io/destination-browser-client/"
   },
   {
     id: 4,
@@ -124,6 +127,7 @@ export const resumePortfolio = [
     title: "Resume",
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+    site: "https://docs.google.com/document/d/1C2i2SrObCDLEQg7TSIZql85FNdfqWN-e/edit?usp=sharing&ouid=115968313951710611837&rtpof=true&sd=true"
   },
   
 ];
