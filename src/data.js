@@ -127,7 +127,7 @@ export const resumePortfolio = [
     title: "Resume",
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    site: "https://docs.google.com/document/d/1C2i2SrObCDLEQg7TSIZql85FNdfqWN-e/edit?usp=sharing&ouid=115968313951710611837&rtpof=true&sd=true"
+    site: "https://docs.google.com/document/d/1SFwHxFJ8lBtKWuVFJGlWFZDoTemoO3c0/edit"
   },
   
 ];

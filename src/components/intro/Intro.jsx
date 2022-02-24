@@ -3,6 +3,8 @@ import './intro.scss'
   import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
 // import {KeyboardArrowDown} from '@material-ui/icons'
+import portrait from '../../assets/portrait.png'
+import down from '../../assets/down.png'
 
 
 export default function Intro() {
@@ -23,7 +25,7 @@ export default function Intro() {
     <div className='intro' id='intro'>
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/portrait.png" alt="" />
+          <img src={portrait} alt="" />
         </div>
       </div>
       <div className="right">
@@ -34,7 +36,7 @@ export default function Intro() {
           <h3><span ref={textRef}></span></h3>
         </div>
         <a href="#portfolio">
-          <img src="assets/down.png" alt="" />
+          <img src={down} alt="" />
           {/* <KeyboardArrowDown className='down'/> */}
         </a>
       </div>
