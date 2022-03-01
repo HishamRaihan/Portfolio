@@ -5,6 +5,7 @@ import travel from '../../assets/travel.png'
 import arrow from '../../assets/arrow.png'
 import globe from '../../assets/globe.png'
 import game from '../../assets/tictactoe.png'
+import social from '../../assets/social.png'
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -12,10 +13,10 @@ export default function Works() {
    const data = [
     {
       id: "1",
-      icon: `${mobile}`,
+      icon: `${travel}`,
       title: "Travel Blog",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Will add a short description",
       img:
         `${travel}`,
     },
@@ -24,22 +25,22 @@ export default function Works() {
       icon: `${globe}`,
       title: "OurSpace Social media app",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "will add a short description",
       img:
-        `${travel}`,
+        `${social}`,
     },
     {
       id: "3",
       icon: `${game}`,
       title: "TicTacToe",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "will add a short description",
      img:
         `${game}`,
     },
     // {
     //   id: "4",
-    //   icon: `${game}`,
+    //   icon: `${social}`,
     //   title: "TicTacToe",
     //   desc:
     //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -72,7 +73,7 @@ export default function Works() {
               </div>
             </div>
             <div className="right">
-              <img src={travel} alt="" />
+              <img src={item.img} alt="" />
             </div>
           </div>
         </div>
