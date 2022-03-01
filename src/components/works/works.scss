@@ -126,6 +126,7 @@
 						p {
 							font-style: 13px;
 							overflow: hidden;
+							
 							@include mobile {
 								display: none;
 								font-size: 13px;
