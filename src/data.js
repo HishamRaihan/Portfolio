@@ -1,23 +1,26 @@
+import travel from './assets/travel.png'
+import game from './assets/tictactoe.png'
+import social from './assets/social.png'
 export const featuredPortfolio = [
   {
     id: 1,
     title: "Social Media App",
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
+      `${social}`,
     site: "https://team-rendering.github.io/project-frontend/"
   },
   {
     id: 2,
     title: "Tic Tac Toe",
     img:
-      "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
+      `${game}`,
     site:"https://hishamraihan.github.io/TicTacToe-GAProject/"
   },
   {
     id: 3,
     title: "The Travel Blog",
     img:
-      "https://cdn.dribbble.com/users/1387827/screenshots/15466426/media/deb2dca6762cd3610321c98bfccb0b72.png?compress=1&resize=1200x900",
+      `${travel}`,
     site:"https://hishamraihan.github.io/destination-browser-client/"
   },
   {

@@ -1,6 +1,7 @@
 import React from 'react'
 import './topbar.scss'
-import {Person, Mail, LinkedIn, GitHub} from '@material-ui/icons'
+import {//Person, 
+  Mail, LinkedIn, GitHub} from '@material-ui/icons'
 import ParticlesBackground from '../particles/ParticlesBackground'
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -11,10 +12,10 @@ export default function Topbar({menuOpen, setMenuOpen}) {
       <div className='wrapper'>
           <div className="left">
             <a href="#intro" className='logo'>مرحبا</a>
-            <div className="itemContainer">
+            {/* <div className="itemContainer">
               <Person className='icon'/>
-              {/* <span>917-675-1559</span> */}
-            </div>
+              <span>917-675-1559</span>
+            </div> */}
             <div className="itemContainer">
               <Mail className='icon'/>
               <span>mr.hraihan@gmail.com</span>

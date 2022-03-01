@@ -15,18 +15,18 @@ const [data, setData]= useState([])
       id: 'featured',
       title: 'Featured',
     },
-    {
-      id: 'web',
-      title: 'Web App',
-    },
-    {
-      id: 'mobile',
-      title: 'Mobile App',
-    },
-    {
-      design: 'design',
-      title: 'Design',
-    },
+    // {
+    //   id: 'web',
+    //   title: 'Web App',
+    // },
+    // {
+    //   id: 'mobile',
+    //   title: 'Mobile App',
+    // },
+    // {
+    //   design: 'design',
+    //   title: 'Design',
+    // },
     {
       id: 'resume',
       title: 'Resume',
