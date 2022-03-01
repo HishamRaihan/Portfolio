@@ -1,38 +1,56 @@
+@import '../../global.scss';
+
 .works {
 	background-color: rgb(53, 47, 48);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-  // for the arrow images
-  position: relative;
+	// for the arrow images
+	position: relative;
 
-  .arrow{
-    height: 60px;
-    position: absolute;
-    cursor: pointer;
+	@include mobile {
+		overflow: hidden;
+	}
 
-    &.left{
-      left: 100px;
-      transform: rotateY(180deg);
-    }
-    &.right{
-      right: 100px;
-      // transform: rotateY(180deg);
-    }
-  }
+	.arrow {
+		height: 60px;
+		position: absolute;
+		cursor: pointer;
+
+		@include mobile {
+			display: none;
+		}
+
+		&.left {
+			left: 100px;
+			transform: rotateY(180deg);
+		}
+		&.right {
+			right: 100px;
+			// transform: rotateY(180deg);
+		}
+	}
 
 	.slider {
 		height: 350px;
 		display: flex;
 		position: absolute;
 		left: 0;
-    transition: all 1s ease-out;
+		transition: all 1s ease-out;
+
+		@include mobile {
+			height: 100vh;
+			flex-direction: column;
+			justify-content: center;
+			overflow: hidden;
+		}
 
 		.container {
 			width: 100vw;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			overflow: hidden;
 
 			.item {
 				width: 700px;
@@ -42,6 +60,15 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				overflow: hidden;
+
+				@include mobile {
+					overflow: hidden;
+					width: 80%;
+					height: 180px;
+					margin: 15px 0;
+					overflow: hidden;
+				}
 
 				.left {
 					flex: 4;
@@ -49,6 +76,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
+					overflow: hidden;
 					// background-color: blue;
 
 					.leftContainer {
@@ -57,6 +85,12 @@
 						display: flex;
 						flex-direction: column;
 						justify-content: space-between;
+						overflow: hidden;
+
+						@include mobile {
+							width: 100%;
+							height: 100%;
+						}
 
 						.imgContainer {
 							width: 40px;
@@ -66,38 +100,58 @@
 							display: flex;
 							align-items: center;
 							justify-content: center;
+							overflow: hidden;
+
+							@include mobile {
+								width: 20px;
+								height: 20px;
+							}
 
 							img {
 								width: 25px;
+
+								@include mobile {
+									width: 15px;
+								}
 							}
 						}
-            h2{
-              font-style: 20px;
-            }
-            p{
-              font-style: 13px;
-            }
-            span{
-              font-style: 12px;
-              font-weight: bold;
-              text-decoration: underline;
-              cursor: pointer;
-            }
+						h2 {
+							font-style: 20px;
+							overflow: hidden;
+
+							@include mobile {
+								font-size: 17px;
+							}
+						}
+						p {
+							font-style: 13px;
+							overflow: hidden;
+							@include mobile {
+								display: none;
+								font-size: 13px;
+							}
+						}
+						span {
+							font-style: 12px;
+							font-weight: bold;
+							text-decoration: underline;
+							cursor: pointer;
+						}
 					}
 				}
 				.right {
 					flex: 8;
 					height: 100%;
 					background-color: orange;
-          align-items: center;
-          justify-content: center;
-          overflow: hidden;
-          
-          img{
-            width: 100%;
-            height: 100%;
-            // transform: rotate(-10deg);
-          }
+					align-items: center;
+					justify-content: center;
+					overflow: hidden;
+
+					img {
+						width: 100%;
+						height: 100%;
+						// transform: rotate(-10deg);
+					}
 				}
 			}
 		}

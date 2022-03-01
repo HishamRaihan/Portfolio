@@ -13,7 +13,7 @@ export default function Testimonials() {
       img:
         `${ben}`,
       desc:
-        "Hisham is one of the best things to walk on this planet ",
+        "it's been a pleasure having you in class! You always seem like you're in a good mood and I really enjoy your questions. 🙂",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Testimonials() {
         `${rachel}`,
       icon: "assets/twitter.png",
       desc:
-        "Hisham is a wonderful person and developer",
+        "Hisham is a wonderful person, he has shined light onto outcomes",
         // this will be the biggest
       featured: true,
     },
@@ -41,23 +41,23 @@ export default function Testimonials() {
     <div className="testimonials" id="testimonials">
       <h1>Testimonials</h1>
       <div className="container">
-        {data.map((d) => (
-          <div className={d.featured ? "card featured" : "card"}>
+        {data.map((list) => (
+          <div className={list.featured ? "card featured" : "card"}>
             <div className="top">
               <img className="left" alt="" />
               <img
                 className="user"
-                src={d.img}
+                src={list.img}
                 alt=""
               />
               <img className="right" alt="" />
             </div>
             <div className="center">
-              {d.desc}
+              {list.desc}
             </div>
             <div className="bottom">
-              <h3>{d.name}</h3>
-              <h4>{d.title}</h4>
+              <h3>{list.name}</h3>
+              <h4>{list.title}</h4>
             </div>
           </div>
         ))}

@@ -37,15 +37,15 @@ export default function Works() {
      img:
         `${game}`,
     },
-    {
-      id: "4",
-      icon: `${game}`,
-      title: "TicTacToe",
-      desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-     img:
-        `${game}`,
-    },
+    // {
+    //   id: "4",
+    //   icon: `${game}`,
+    //   title: "TicTacToe",
+    //   desc:
+    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    //  img:
+    //     `${game}`,
+    // },
   ];
 
   const handleClick= (direction) =>{
