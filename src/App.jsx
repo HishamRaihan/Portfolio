@@ -4,7 +4,7 @@ import Intro from './components/intro/Intro'
 import Portfolio from './components/portfolio/Portfolio'
 import Works from './components/works/Works'
 import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
+// import Contact from './components/contact/Contact'
 import './app.scss'
 import { useState } from 'react'
 import Menu from './components/menu/Menu'
@@ -27,7 +27,7 @@ function App() {
      <Portfolio />
      <Works />
      <Testimonials />
-     <Contact />
+     {/* <Contact /> */}
    </div>
     </div>
     </React.Fragment>

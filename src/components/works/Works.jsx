@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './works.scss'
-import mobile from '../../assets/mobile.png'
+// import mobile from '../../assets/mobile.png'
 import travel from '../../assets/travel.png'
 import arrow from '../../assets/arrow.png'
 import globe from '../../assets/globe.png'
