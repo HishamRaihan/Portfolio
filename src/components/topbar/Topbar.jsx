@@ -3,6 +3,7 @@ import './topbar.scss'
 import {//Person, 
   Mail, LinkedIn, GitHub} from '@material-ui/icons'
 import ParticlesBackground from '../particles/ParticlesBackground'
+import { Link } from '@material-ui/core'
 
 
 export default function Topbar({menuOpen, setMenuOpen}) {
@@ -24,11 +25,11 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             </div>
             <div className="itemContainer">
               <LinkedIn className='icon'/>
-              <a href="https://www.linkedin.com/in/hishamraihan/" target='_blank' rel="noreferrer">HishamRaihan</a>
+              <Link href="https://www.linkedin.com/in/hishamraihan/" className='link' target='_blank' rel="noreferrer">HishamRaihan</Link>
             </div>
             <div className="itemContainer">
               <GitHub className='icon'/>
-              <a href="https://github.com/HishamRaihan" target='_blank' rel="noreferrer">HishamRaihan</a>
+              <Link href="https://github.com/HishamRaihan" className='link' target='_blank' rel="noreferrer">HishamRaihan</Link>
             </div>
           </div>
           <div className="right">
