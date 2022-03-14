@@ -7,11 +7,19 @@
   align-items: center;
   
 
-.resume-btn{
-  background-color: $mainColor;
-  color: white;
-  height: 50px;
-}
+  .resume-btn{
+    background-color: $mainColor;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+  }
+  .nonActive{
+display: none;
+  }
     
 
   h1 {
