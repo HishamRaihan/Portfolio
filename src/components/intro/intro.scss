@@ -1,11 +1,10 @@
 @import "../../global.scss";
 
-
 .intro {
 	background-color: white;
 	display: flex;
 
-	@include mobile{
+	@include mobile {
 		flex-direction: column;
 		align-items: center;
 	}
@@ -13,6 +12,9 @@
 	.left {
 		flex: 0.5;
 		overflow: hidden;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
 
 		.imgContainer {
 			width: 700px;
@@ -25,7 +27,7 @@
 			// aligns to the right side
 			float: right;
 
-			@include mobile{
+			@include mobile {
 				//for the image
 				align-items: flex-start;
 			}
@@ -34,7 +36,7 @@
 				height: 90%;
 				border-radius: 50%;
 
-				@include mobile{
+				@include mobile {
 					height: 50%;
 				}
 			}
@@ -54,17 +56,16 @@
 			flex-direction: column;
 			justify-content: center;
 
-			@include mobile{
+			@include mobile {
 				padding-left: 0;
 				align-items: center;
-
 			}
 
 			h1 {
 				font-size: 60px;
 				margin: 10px 0;
 
-				@include mobile{
+				@include mobile {
 					font-style: 40px;
 				}
 			}
@@ -73,13 +74,12 @@
 			}
 			h3 {
 				font-size: 30px;
-				@include mobile{
+				@include mobile {
 					font-style: 20px;
 				}
 				span {
 					font-size: inherit;
 					color: crimson;
-
 				}
 
 				.ityped-cursor {
@@ -91,14 +91,14 @@
 					// animation: blink 0.3s infinite;
 					// animation-direction: alternate;
 				}
-        @keyframes blink {
-          50%{
-            opacity: 1;
-          }
-          100%{
-            opacity: 0;
-          }
-        }
+				@keyframes blink {
+					50% {
+						opacity: 1;
+					}
+					100% {
+						opacity: 0;
+					}
+				}
 			}
 		}
 		a {
