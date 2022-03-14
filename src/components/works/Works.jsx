@@ -21,6 +21,8 @@ export default function Works() {
         "Organizations need empowered and aligned Agile teams, ready to engage in solutions that deliver value,and directly correlate to the bottom line. Empower your Agile teams with globally recognized certifications from Scrum Alliance® and drive value for your business",
       img:
         `${CSM}`,
+
+      site: 'https://bcert.me/bc/html/show-badge.html?b=vwlzeoap'
     },
     {
       id: "2",
@@ -60,9 +62,9 @@ export default function Works() {
   return (
     <>
     <div className='works' id='works'>
-      <header>
+      {/* <header>
       <h1>Certifications</h1>
-      </header>
+      </header> */}
     
       <div className='slider' style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
         {data.map(item =>(
@@ -76,6 +78,7 @@ export default function Works() {
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
+                <a href={item.site} target='_blank' rel="noreferrer">Certificate Site</a>
                 {/* <span>Projects</span> */}
               </div>
             </div>

@@ -4,7 +4,8 @@ import { useState } from 'react'
 import PortfolioList from '../portfolioList.jsx/PortfolioList'
 import './portfolio.scss'
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, resumePortfolio } from '../../data.js'
-// import Resume from '../../assets/Hisham.R.pdf'
+import Resume from '../../assets/Hisham.R.pdf'
+import { Button } from '@material-ui/core'
 
 export default function Portfolio() {
 // to decide which project is selected
@@ -55,10 +56,39 @@ const [data, setData]= useState([])
     }
     // when ever we change the selected then the data will change
   },[selected])
+// console.log(selected);
+  if (selected === 'resume'){
+    return (
+      <div className='portfolio' id='portfolio'>
+      <h1>Portfolio</h1>
+      <ul>
+       {list.map(item =>(
+         <PortfolioList id={item.id} title={item.title} active={selected === item.id} 
+         setSelected = {setSelected}
+         />
+       ))}
+      </ul>
+      <div className="container">
+        {/* <div className="item">
+          <img src="assets/tictactoe.png" alt="" />
+          <h3>Tic Tac Toe</h3>
+        </div> */}
+       {data.map((stuff) =>(
+         <div>
 
-  // if (list.title === 'resume'){
-  //   return <a href={Resume}></a>
-  // }
+         <div className="item">
+         <img src={stuff.img} alt=""/>
+         <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}</a>
+         {/* <h3 href={stuff.site}>{stuff.title} </h3> */}
+         {/* <h2>Description</h2> */}
+         </div>
+         </div>
+       ))}
+      </div>
+       <Button href={Resume} className='resume-btn' download >Download Resume</Button>
+    </div>
+    )
+  }else{
   return (
     <div className='portfolio' id='portfolio'>
       <h1>Portfolio</h1>
@@ -75,15 +105,19 @@ const [data, setData]= useState([])
           <h3>Tic Tac Toe</h3>
         </div> */}
        {data.map((stuff) =>(
+         <div>
+
          <div className="item">
          <img src={stuff.img} alt=""/>
          <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}</a>
          {/* <h3 href={stuff.site}>{stuff.title} </h3> */}
          {/* <h2>Description</h2> */}
-
+         </div>
+       {/* <button className={stuff.id === 'resume' ? '' :'resume-btn'} >Download Resume</button> */}
          </div>
        ))}
       </div>
     </div>
   )
+}
 }
