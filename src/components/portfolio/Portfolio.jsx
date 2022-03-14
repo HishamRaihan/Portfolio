@@ -4,6 +4,7 @@ import { useState } from 'react'
 import PortfolioList from '../portfolioList.jsx/PortfolioList'
 import './portfolio.scss'
 import { featuredPortfolio, webPortfolio, mobilePortfolio, designPortfolio, resumePortfolio } from '../../data.js'
+// import Resume from '../../assets/Hisham.R.pdf'
 
 export default function Portfolio() {
 // to decide which project is selected
@@ -54,6 +55,10 @@ const [data, setData]= useState([])
     }
     // when ever we change the selected then the data will change
   },[selected])
+
+  // if (list.title === 'resume'){
+  //   return <a href={Resume}></a>
+  // }
   return (
     <div className='portfolio' id='portfolio'>
       <h1>Portfolio</h1>
@@ -72,9 +77,10 @@ const [data, setData]= useState([])
        {data.map((stuff) =>(
          <div className="item">
          <img src={stuff.img} alt=""/>
-         <a href={stuff.site}>{stuff.title}</a>
+         <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}</a>
          {/* <h3 href={stuff.site}>{stuff.title} </h3> */}
          {/* <h2>Description</h2> */}
+
          </div>
        ))}
       </div>

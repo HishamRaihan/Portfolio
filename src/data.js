@@ -1,6 +1,8 @@
 import travel from './assets/travel.png'
-import game from './assets/tictactoe.png'
+import game from './assets/ttt2.png'
 import social from './assets/social.png'
+import honest from './assets/honest.png'
+import Resume from './assets/Hisham.R.pdf'
 export const featuredPortfolio = [
   {
     id: 1,
@@ -25,8 +27,10 @@ export const featuredPortfolio = [
   },
   {
     id: 4,
-    title: "Coming Soon",
-    img:
+    title: "Honest Installs",
+    img: 
+    `${honest}`,
+    site:
       "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
   },
   // {
@@ -129,8 +133,8 @@ export const resumePortfolio = [
     id: 1,
     title: "Resume",
     img:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvdHn8GmPGCO0y3SJqNHACygpm0h9VycMHg&usqp=CAU",
-    site: "https://docs.google.com/document/d/1SFwHxFJ8lBtKWuVFJGlWFZDoTemoO3c0/edit"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcoxckUI86i2d4pU1GswSXcyY32c2MfyxIJg&usqp=CAU",
+    site: `${Resume}`
   },
   
 ];

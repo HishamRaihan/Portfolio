@@ -4,14 +4,16 @@ import {//Person,
   Mail, LinkedIn, GitHub} from '@material-ui/icons'
 import ParticlesBackground from '../particles/ParticlesBackground'
 
+
 export default function Topbar({menuOpen, setMenuOpen}) {
   return (
+    
     <React.Fragment>
       <ParticlesBackground />
     <div className={'topbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
           <div className="left">
-            <a href="#intro" className='logo'>مرحبا</a>
+            <a href="intro" className='logo'>مرحبا</a>
             {/* <div className="itemContainer">
               <Person className='icon'/>
               <span>917-675-1559</span>
@@ -22,11 +24,11 @@ export default function Topbar({menuOpen, setMenuOpen}) {
             </div>
             <div className="itemContainer">
               <LinkedIn className='icon'/>
-              <a href="https://www.linkedin.com/in/hishamraihan/">HishamRaihan</a>
+              <a href="https://www.linkedin.com/in/hishamraihan/" target='_blank' rel="noreferrer">HishamRaihan</a>
             </div>
             <div className="itemContainer">
               <GitHub className='icon'/>
-              <a href="https://github.com/HishamRaihan">HishamRaihan</a>
+              <a href="https://github.com/HishamRaihan" target='_blank' rel="noreferrer">HishamRaihan</a>
             </div>
           </div>
           <div className="right">

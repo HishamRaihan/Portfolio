@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import './works.scss'
 // import mobile from '../../assets/mobile.png'
-import travel from '../../assets/travel.png'
+import csm from '../../assets/seal-csm.png'
+import ga from '../../assets/general-assembly_logo.png'
+import CSM from '../../assets/CSM.png'
 import arrow from '../../assets/arrow.png'
-import globe from '../../assets/globe.png'
-import game from '../../assets/tictactoe.png'
-import social from '../../assets/social.png'
+// import globe from '../../assets/globe.png'
+// import game from '../../assets/tictactoe.png'
+import coming from '../../assets/Coming.png'
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -13,31 +15,31 @@ export default function Works() {
    const data = [
     {
       id: "1",
-      icon: `${travel}`,
-      title: "Travel Blog",
+      icon: `${csm}`,
+      title: "Scrum Master",
       desc:
-        "Will add a short description",
+        "Organizations need empowered and aligned Agile teams, ready to engage in solutions that deliver value,and directly correlate to the bottom line. Empower your Agile teams with globally recognized certifications from Scrum Alliance® and drive value for your business",
       img:
-        `${travel}`,
+        `${CSM}`,
     },
     {
       id: "2",
-      icon: `${globe}`,
-      title: "OurSpace Social media app",
+      icon: `${ga}`,
+      title: "General Assembly",
       desc:
-        "will add a short description",
+        "Full-stack software engineering immersive student in an intensive, 24-week, 450+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. ",
       img:
-        `${social}`,
+        `${coming}`,
     },
-    {
-      id: "3",
-      icon: `${game}`,
-      title: "TicTacToe",
-      desc:
-        "will add a short description",
-     img:
-        `${game}`,
-    },
+    // {
+    //   id: "3",
+    //   icon: `${game}`,
+    //   title: "TicTacToe",
+    //   desc:
+    //     "will add a short description",
+    //  img:
+    //     `${game}`,
+    // },
     // {
     //   id: "4",
     //   icon: `${social}`,
@@ -56,10 +58,15 @@ export default function Works() {
     : setCurrentSlide(currentSlide < data.length -1 ? currentSlide+1 : 0)
   }
   return (
+    <>
     <div className='works' id='works'>
+      <header>
+      <h1>Certifications</h1>
+      </header>
+    
       <div className='slider' style={{transform: `translateX(-${currentSlide * 100}vw)`}}>
         {data.map(item =>(
-
+          
           <div className="container">
           <div className="item">
             <div className="left">
@@ -69,7 +76,7 @@ export default function Works() {
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
-                <span>Projects</span>
+                {/* <span>Projects</span> */}
               </div>
             </div>
             <div className="right">
@@ -83,5 +90,6 @@ export default function Works() {
       <img src={arrow} className='arrow left' alt="" onClick={() =>handleClick('left')}/>
       <img src={arrow} className='arrow right' alt="" onClick={() =>handleClick()}/>
     </div>
+        </>
   )
 }

@@ -23,7 +23,7 @@ export default function Testimonials() {
         `${rachel}`,
       icon: "assets/twitter.png",
       desc:
-        "Hisham is a wonderful person, he has shined light onto outcomes",
+        "Hisham has the winning combination of a strong work ethic and a great sense of humor. His classmates loved working on projects with him, so I can confidently say that any team will be lucky to have him as their newest software engineer!",
         // this will be the biggest
       featured: true,
     },
