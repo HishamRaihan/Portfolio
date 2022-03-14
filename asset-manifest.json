@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.67956d9b.css",
-    "main.js": "/Portfolio/static/js/main.791f34af.js",
+    "main.css": "/Portfolio/static/css/main.66a0bec8.css",
+    "main.js": "/Portfolio/static/js/main.483b540c.js",
     "static/js/787.d16e9580.chunk.js": "/Portfolio/static/js/787.d16e9580.chunk.js",
     "static/media/Hisham.R.pdf": "/Portfolio/static/media/Hisham.R.80aea829aac7ae67f72b.pdf",
     "static/media/travel.png": "/Portfolio/static/media/travel.7d3aa03dbab78b13c7b2.png",
@@ -17,12 +17,12 @@
     "static/media/Coming.png": "/Portfolio/static/media/Coming.6cae2043bf22e70776a6.png",
     "static/media/general-assembly_logo.png": "/Portfolio/static/media/general-assembly_logo.6e9efafdf1559d2029bc.png",
     "index.html": "/Portfolio/index.html",
-    "main.67956d9b.css.map": "/Portfolio/static/css/main.67956d9b.css.map",
-    "main.791f34af.js.map": "/Portfolio/static/js/main.791f34af.js.map",
+    "main.66a0bec8.css.map": "/Portfolio/static/css/main.66a0bec8.css.map",
+    "main.483b540c.js.map": "/Portfolio/static/js/main.483b540c.js.map",
     "787.d16e9580.chunk.js.map": "/Portfolio/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67956d9b.css",
-    "static/js/main.791f34af.js"
+    "static/css/main.66a0bec8.css",
+    "static/js/main.483b540c.js"
   ]
 }
