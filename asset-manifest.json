@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2cfbb829.css",
-    "main.js": "/Portfolio/static/js/main.89f03b4b.js",
+    "main.css": "/Portfolio/static/css/main.2cbe035b.css",
+    "main.js": "/Portfolio/static/js/main.30dcc683.js",
     "static/js/787.d16e9580.chunk.js": "/Portfolio/static/js/787.d16e9580.chunk.js",
     "static/media/Hisham.R.pdf": "/Portfolio/static/media/Hisham.R.80aea829aac7ae67f72b.pdf",
     "static/media/travel.png": "/Portfolio/static/media/travel.7d3aa03dbab78b13c7b2.png",
@@ -9,6 +9,7 @@
     "static/media/portrait.png": "/Portfolio/static/media/portrait.0fe58abd8b8ac7340069.png",
     "static/media/ttt2.png": "/Portfolio/static/media/ttt2.fd6503237940558243df.png",
     "static/media/social.png": "/Portfolio/static/media/social.f25341c62b7f61eb2c36.png",
+    "static/media/HonestQR.png": "/Portfolio/static/media/HonestQR.628529410f36f4b08240.png",
     "static/media/weston.png": "/Portfolio/static/media/weston.6d3266e706f52ada0f6a.png",
     "static/media/CSM.png": "/Portfolio/static/media/CSM.cb3c29ca56ad79a3ff31.png",
     "static/media/rachel.png": "/Portfolio/static/media/rachel.c86c3a8eedf77c38165c.png",
@@ -17,12 +18,12 @@
     "static/media/Coming.png": "/Portfolio/static/media/Coming.6cae2043bf22e70776a6.png",
     "static/media/general-assembly_logo.png": "/Portfolio/static/media/general-assembly_logo.6e9efafdf1559d2029bc.png",
     "index.html": "/Portfolio/index.html",
-    "main.2cfbb829.css.map": "/Portfolio/static/css/main.2cfbb829.css.map",
-    "main.89f03b4b.js.map": "/Portfolio/static/js/main.89f03b4b.js.map",
+    "main.2cbe035b.css.map": "/Portfolio/static/css/main.2cbe035b.css.map",
+    "main.30dcc683.js.map": "/Portfolio/static/js/main.30dcc683.js.map",
     "787.d16e9580.chunk.js.map": "/Portfolio/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cfbb829.css",
-    "static/js/main.89f03b4b.js"
+    "static/css/main.2cbe035b.css",
+    "static/js/main.30dcc683.js"
   ]
 }
