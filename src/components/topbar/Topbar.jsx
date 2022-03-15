@@ -14,22 +14,22 @@ export default function Topbar({menuOpen, setMenuOpen}) {
     <div className={'topbar ' + (menuOpen && 'active')}>
       <div className='wrapper'>
           <div className="left">
-            <a href="#intro" className='logo'>مرحبا</a>
+            <a href="#intro" className='logo' style={{color: menuOpen ? 'white' : 'black'}}>مرحبا</a>
             {/* <div className="itemContainer">
               <Person className='icon'/>
               <span>917-675-1559</span>
             </div> */}
             <div className="itemContainer">
               <Mail className='icon'/>
-              <span>mr.hraihan@gmail.com</span>
+              <span style={{color: menuOpen ? 'white' : 'black'}}>mr.hraihan@gmail.com</span>
             </div>
             <div className="itemContainer">
               <LinkedIn className='icon'/>
-              <Link href="https://www.linkedin.com/in/hishamraihan/" className='link' target='_blank' rel="noreferrer">HishamRaihan</Link>
+              <Link href="https://www.linkedin.com/in/hishamraihan/" className='link' target='_blank' rel="noreferrer" style={{color: menuOpen ? 'white' : 'black'}}>HishamRaihan</Link>
             </div>
             <div className="itemContainer">
               <GitHub className='icon'/>
-              <Link href="https://github.com/HishamRaihan" className='link' target='_blank' rel="noreferrer">HishamRaihan</Link>
+              <Link href="https://github.com/HishamRaihan" className='link' target='_blank' rel="noreferrer" style={{color: menuOpen ? 'white' : 'black'}}>HishamRaihan</Link>
             </div>
           </div>
           <div className="right">

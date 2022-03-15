@@ -27,7 +27,6 @@ export default function Menu({menuOpen, setMenuOpen}) {
         </li> */}
       </ul>
       <div className='img-container'>
-
       <img src={qr} alt="" />
       </div>
     </div>
