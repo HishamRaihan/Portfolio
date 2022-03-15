@@ -1,6 +1,7 @@
 import React from 'react'
 // import ParticlesBackground from '../particles/ParticlesBackground'
 import './menu.scss'
+import qr from '../../assets/HonestQR.png'
 
 // in menu background add interactive galaxy ************* Dont Forget
 export default function Menu({menuOpen, setMenuOpen}) {
@@ -25,6 +26,10 @@ export default function Menu({menuOpen, setMenuOpen}) {
           <a href="#contact">Contact</a>
         </li> */}
       </ul>
+      <div className='img-container'>
+
+      <img src={qr} alt="" />
+      </div>
     </div>
     </React.Fragment>
   )
