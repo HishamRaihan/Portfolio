@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2cbe035b.css",
-    "main.js": "/Portfolio/static/js/main.6b2463a3.js",
+    "main.css": "/Portfolio/static/css/main.1984e4c8.css",
+    "main.js": "/Portfolio/static/js/main.8852143f.js",
     "static/js/787.d16e9580.chunk.js": "/Portfolio/static/js/787.d16e9580.chunk.js",
     "static/media/Hisham.R.pdf": "/Portfolio/static/media/Hisham.R.80aea829aac7ae67f72b.pdf",
     "static/media/travel.png": "/Portfolio/static/media/travel.7d3aa03dbab78b13c7b2.png",
+    "static/media/shitting.jpg": "/Portfolio/static/media/shitting.ef1c71e037e922fd009a.jpg",
+    "static/media/life3.png": "/Portfolio/static/media/life3.a076fbefcf79165aa38d.png",
     "static/media/honest.png": "/Portfolio/static/media/honest.9d2dbf90587b44334f2a.png",
     "static/media/portrait.png": "/Portfolio/static/media/portrait.0fe58abd8b8ac7340069.png",
     "static/media/ttt2.png": "/Portfolio/static/media/ttt2.fd6503237940558243df.png",
     "static/media/social.png": "/Portfolio/static/media/social.f25341c62b7f61eb2c36.png",
-    "static/media/HonestQR.png": "/Portfolio/static/media/HonestQR.628529410f36f4b08240.png",
     "static/media/weston.png": "/Portfolio/static/media/weston.6d3266e706f52ada0f6a.png",
     "static/media/CSM.png": "/Portfolio/static/media/CSM.cb3c29ca56ad79a3ff31.png",
     "static/media/rachel.png": "/Portfolio/static/media/rachel.c86c3a8eedf77c38165c.png",
@@ -18,12 +19,12 @@
     "static/media/Coming.png": "/Portfolio/static/media/Coming.6cae2043bf22e70776a6.png",
     "static/media/general-assembly_logo.png": "/Portfolio/static/media/general-assembly_logo.6e9efafdf1559d2029bc.png",
     "index.html": "/Portfolio/index.html",
-    "main.2cbe035b.css.map": "/Portfolio/static/css/main.2cbe035b.css.map",
-    "main.6b2463a3.js.map": "/Portfolio/static/js/main.6b2463a3.js.map",
+    "main.1984e4c8.css.map": "/Portfolio/static/css/main.1984e4c8.css.map",
+    "main.8852143f.js.map": "/Portfolio/static/js/main.8852143f.js.map",
     "787.d16e9580.chunk.js.map": "/Portfolio/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cbe035b.css",
-    "static/js/main.6b2463a3.js"
+    "static/css/main.1984e4c8.css",
+    "static/js/main.8852143f.js"
   ]
 }
