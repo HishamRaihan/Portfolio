@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.02985eae.css",
-    "main.js": "/Portfolio/static/js/main.2ed50d58.js",
+    "main.css": "/Portfolio/static/css/main.1984e4c8.css",
+    "main.js": "/Portfolio/static/js/main.0c35691f.js",
     "static/js/787.d16e9580.chunk.js": "/Portfolio/static/js/787.d16e9580.chunk.js",
     "static/media/Hisham.R.pdf": "/Portfolio/static/media/Hisham.R.80aea829aac7ae67f72b.pdf",
+    "static/media/brothers.png": "/Portfolio/static/media/brothers.9635a90669dfb6b65dd8.png",
     "static/media/travel.png": "/Portfolio/static/media/travel.7d3aa03dbab78b13c7b2.png",
-    "static/media/shitting.jpg": "/Portfolio/static/media/shitting.ef1c71e037e922fd009a.jpg",
     "static/media/life3.png": "/Portfolio/static/media/life3.a076fbefcf79165aa38d.png",
     "static/media/honest.png": "/Portfolio/static/media/honest.9d2dbf90587b44334f2a.png",
     "static/media/portrait.png": "/Portfolio/static/media/portrait.0fe58abd8b8ac7340069.png",
@@ -19,12 +19,12 @@
     "static/media/Coming.png": "/Portfolio/static/media/Coming.6cae2043bf22e70776a6.png",
     "static/media/general-assembly_logo.png": "/Portfolio/static/media/general-assembly_logo.6e9efafdf1559d2029bc.png",
     "index.html": "/Portfolio/index.html",
-    "main.02985eae.css.map": "/Portfolio/static/css/main.02985eae.css.map",
-    "main.2ed50d58.js.map": "/Portfolio/static/js/main.2ed50d58.js.map",
+    "main.1984e4c8.css.map": "/Portfolio/static/css/main.1984e4c8.css.map",
+    "main.0c35691f.js.map": "/Portfolio/static/js/main.0c35691f.js.map",
     "787.d16e9580.chunk.js.map": "/Portfolio/static/js/787.d16e9580.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02985eae.css",
-    "static/js/main.2ed50d58.js"
+    "static/css/main.1984e4c8.css",
+    "static/js/main.0c35691f.js"
   ]
 }
