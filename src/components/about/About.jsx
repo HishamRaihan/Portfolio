@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './about.scss'
 import life from '../../assets/life3.png'
 import Experience from '../Experience/Experience'
 
 export default function About() {
-  const [message, setMessage] = useState(false)
+  // const [message, setMessage] = useState(false)
 
-  const handleSubmit = (event) =>{
-    event.preventDefault()
-    setMessage(true)
+  // const handleSubmit = (event) =>{
+  //   event.preventDefault()
+  //   setMessage(true)
 
-  }
+  // }
   return (
     <div className='about' id='about'>
       <div className="left">
