@@ -4,10 +4,13 @@ import Intro from './components/intro/Intro'
 import Portfolio from './components/portfolio/Portfolio'
 import Works from './components/works/Works'
 import Testimonials from './components/testimonials/Testimonials'
-// import Contact from './components/contact/Contact'
+// import Contact from './components/about/About'
 import './app.scss'
 import { useState } from 'react'
 import Menu from './components/menu/Menu'
+// import Experience from './components/Experience/Experience'
+import About from './components/about/About'
+import Contact from './components/contact/Contact'
 // import ParticlesBackground from './components/particles/ParticlesBackground'
 
 
@@ -27,7 +30,9 @@ function App() {
      <Portfolio />
      <Works />
      <Testimonials />
-     {/* <Contact /> */}
+     <About />
+    
+     <Contact />
    </div>
     </div>
     </React.Fragment>

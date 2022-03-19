@@ -1,0 +1,103 @@
+
+.experience__container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2rem;
+  // width: 40%;
+  // margin: 0 !important;
+
+  .experience__frontend,
+  .experience__backend {
+    background: #5081eadb;
+    padding: 2.4rem 5rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+    color: whitesmoke;
+    transition: 1s ease ;
+    // min-width: 250px;
+
+    &:hover {
+      background: white;
+      border: 2px solid black;
+      cursor: default;
+      color: black;
+      transition: 1s ease;
+
+      h3{
+        color: black;
+        transition: 1s ease;
+      }
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: white;
+    }
+    h4{
+      font-size: 20px;
+    }
+
+    .experience__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 2rem;
+
+      .experience__details {
+        display: flex;
+        gap: 1rem;
+
+        &-icon {
+          margin-top: 6px;
+          color: salmon;
+        }
+      }
+
+      .experience__details:nth-child(odd) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+  .experience__container {
+    grid-template-columns: 1fr;
+  }
+  .experience__frontend,
+  .experience__backend {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+
+    .experience__content {
+      padding: 1rem;
+
+      .experience__details {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .experience__container {
+    gap: 1rem;
+
+    .experience__frontend,
+    .experience__backend {
+      width: 90%;
+      padding: 2rem 1rem;
+
+      .experience__content {
+        padding: 1rem;
+
+        .experience__details {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
