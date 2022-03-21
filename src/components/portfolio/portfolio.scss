@@ -24,7 +24,8 @@ display: none;
 
   h1 {
     font-size: 50px;
-    margin-top: 50px;
+    // margin-top: 50px;
+    overflow: hidden;
 
     @include mobile{
       font-size: 20px;
@@ -42,6 +43,7 @@ display: none;
     align-items: center;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 
     @include mobile{
       margin: 10px 0;
@@ -52,16 +54,20 @@ display: none;
   }
 
   .container {
-    margin-top: 20px;
+    // margin-top: 20px;
     width: 70%;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     overflow: hidden;
 
     @include mobile{
+      grid-template-columns: minmax(0, 1fr);
       width: 100%;
+      gap: 10rem;
+      
     }
 
     .item {
@@ -69,7 +75,7 @@ display: none;
       height: 250px;
       border-radius: 20px;
       border: 1px solid rgb(240, 239, 239);
-      margin: 30px 70px;
+      margin: 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -80,8 +86,9 @@ display: none;
 
     
       @include mobile{
-        width: 130px;
-        height: 100px;
+       width: 80%;
+       height: 175px;
+
       }
 
       h3 {
