@@ -1,12 +1,14 @@
 import React, { useRef, useState } from 'react';
 import { Form, Button, FormControl } from 'react-bootstrap'
 import emailjs from '@emailjs/browser';
+import './contactus.scss';
 
 export const ContactUs = () => {
    const form = useRef()
   const [fullName, setFullName] = useState('')
   const [emailInput, setEmailInput] = useState('')
   const [messageInput, setMessageInput] = useState('')
+  const [message, setMessage] = useState(false)
 
   const nameChangeHandler = (event) => {
     event.preventDefault()
@@ -25,8 +27,9 @@ export const ContactUs = () => {
   }
     const sendEmail = (event) => {
     event.preventDefault()
+    setMessage(true)
 
-    emailjs.sendForm('service_79lyfpo', 'template_qtv7hsl', form.current, 'gmFc-xPYQOovWlFKC')
+    emailjs.sendForm('service_71kluav', 'template_ibcpdkc', form.current, 'fxwo0qwZKMcwOIE1k')
       .then((result) => {
          console.log(result.text);
       }, (error) => {
@@ -50,31 +53,34 @@ export const ContactUs = () => {
   return (
    <Form ref={form} onSubmit={sendEmail}>
           <div>
-            <Form.Label>Full Name</Form.Label>
+            <Form.Label></Form.Label>
             <FormControl 
               type='text'
               name='name'
+              placeholder='Full Name'
               value={fullName}
               onChange={nameChangeHandler}
               required
             />
           </div>
           <div>
-            <Form.Label>Email</Form.Label>
+            <Form.Label></Form.Label>
             <FormControl
               type='email'
               name='email'
+              placeholder='Email'
               value={emailInput}
               onChange={emailChangeHandler}
               required
             />
           </div>
           <div>
-            <Form.Label>Message</Form.Label>
+            <Form.Label></Form.Label>
             <FormControl className='textarea'
               as="textarea"
               row={7}
               name='message'
+              placeholder='Message'
               value={messageInput}
               onChange={messageChangeHandler}
               required
@@ -82,7 +88,7 @@ export const ContactUs = () => {
           </div>
           <Button className='btn btn-primary' type='submit'>Submit</Button>
           <div>
-            {/* {submit ? contactSubmissionSuccessful : ''} */}
+           {message && <span>Thanks, I will reply soon!</span>}
           </div>
         </Form>
   );

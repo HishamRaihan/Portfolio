@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import './contact.scss'
 // import thai from '../../assets/thai.png'
-import brothers from '../../assets/brothers.png'
+import thai from '../../assets/thai.png'
+import { ContactUs } from './ContactUs'
 
 
 export default function Contact() {
@@ -15,17 +16,12 @@ export default function Contact() {
   return (
     <div className='contact' id='contact'>
       <div className="left">
-        <img src={brothers} alt="" />
+        <img src={thai} alt="" />
       </div>
       <div className="right">
         <h2>Contact Me</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder='Email' />
-          <textarea placeholder='Message'></textarea>
-          <button type='submit'>Send</button>
-          {message && <span>Thanks, I will reply soon!</span>}
-        </form>
-      </div>
+       <ContactUs />
+    </div>
     </div>
   )
 }

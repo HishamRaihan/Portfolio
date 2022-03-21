@@ -11,7 +11,7 @@ import Menu from './components/menu/Menu'
 // import Experience from './components/Experience/Experience'
 import About from './components/about/About'
 import Contact from './components/contact/Contact'
-import { ContactUs } from './components/contact/ContactUs'
+// import { ContactUs } from './components/contact/ContactUs'
 // import ParticlesBackground from './components/particles/ParticlesBackground'
 
 
@@ -32,7 +32,7 @@ function App() {
      <Works />
      <Testimonials />
      <About />
-    <ContactUs />
+    {/* <ContactUs /> */}
      <Contact />
    </div>
     </div>
