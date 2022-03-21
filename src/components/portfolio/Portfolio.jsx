@@ -109,8 +109,10 @@ const [data, setData]= useState([])
 
          <div className="item">
          <img src={stuff.img} alt=""/>
-         <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}</a>
-         {/* <h3 href={stuff.site}>{stuff.title} </h3> */}
+         <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}
+         <h6>{stuff.desc} </h6>
+         </a>
+         
          {/* <h2>Description</h2> */}
          </div>
          </div>

@@ -9,21 +9,24 @@ export const featuredPortfolio = [
     title: "Social Media App",
     img:
       `${social}`,
-    site: "https://team-rendering.github.io/project-frontend/"
+    site: "https://team-rendering.github.io/project-frontend/",
+    desc: 'Express MongoDB Node.JS React Javascript HTML/CSS' 
   },
   {
     id: 2,
     title: "Tic Tac Toe",
     img:
       `${game}`,
-    site:"https://hishamraihan.github.io/TicTacToe-GAProject/"
+    site:"https://hishamraihan.github.io/TicTacToe-GAProject/",
+    desc: 'Javascript HTML/CSS'
   },
   {
     id: 3,
     title: "The Travel Blog",
     img:
       `${travel}`,
-    site:"https://hishamraihan.github.io/destination-browser-client/"
+    site:"https://hishamraihan.github.io/destination-browser-client/",
+    desc: 'Express MongoDB Node.JS Javascript HTML/CSS' 
   },
   {
     id: 4,
@@ -32,6 +35,7 @@ export const featuredPortfolio = [
     `${honest}`,
     site:
       "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+    desc: 'Express MongoDB Node.JS React Javascript HTML/CSS'
   },
   // {
   //   id: 5,
