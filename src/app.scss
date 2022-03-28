@@ -3,16 +3,18 @@
 
   .sections{
     width: 100%;
-    height: calc(100vh + 70px);
+    height: calc(100vh - 70px);
     // background-color: orange;
     position: relative;
     top: 70px;
     scroll-behavior: smooth;
+    
     // snap scrolling 
     scroll-snap-type: y mandatory;
     scrollbar-width: none; // firefox
     &::-webkit-scrollbar{ // for everyother web app
       display: none;
+     
     }
 
     // for each element inside of the sections

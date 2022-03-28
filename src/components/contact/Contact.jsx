@@ -16,12 +16,12 @@ export default function Contact() {
   return (
     <div className='contact' id='contact'>
       <div className="left">
-        <img src={thai} alt="" />
-      </div>
-      <div className="right">
         <h2>Contact Me</h2>
        <ContactUs />
     </div>
+      <div className="right">
+        <img src={thai} alt="" />
+      </div>
     </div>
   )
 }

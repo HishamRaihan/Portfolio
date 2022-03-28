@@ -34,7 +34,7 @@ export const featuredPortfolio = [
     img: 
     `${honest}`,
     site:
-      "https://cdn.dribbble.com/users/4095861/screenshots/15467417/media/d6a15c416626f12b31fa5ca1db192572.png?compress=1&resize=1200x900",
+      "https://hishamraihan.github.io/honest_frontend/",
     desc: 'Express MongoDB Node.JS React Javascript HTML/CSS'
   },
   // {

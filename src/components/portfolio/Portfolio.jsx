@@ -49,11 +49,19 @@ const [data, setData]= useState([])
         setData(designPortfolio)
         break;
       case 'resume':
+        console.log(selected);
         setData(resumePortfolio)
         break;
         default:
           setData(featuredPortfolio)
-    }
+        }
+        // if (selected === 'resume') {
+        //  let styleResume = document.getElementsByClassName('container')
+
+        //  styleResume.classList.toggle('resume')
+        
+        
+        // }
     // when ever we change the selected then the data will change
   },[selected])
 // console.log(selected);
@@ -99,15 +107,15 @@ const [data, setData]= useState([])
          />
        ))}
       </ul>
-      <div className="container">
+      <div className={selected === 'resume' ? 'resume' : 'container'}>
         {/* <div className="item">
           <img src="assets/tictactoe.png" alt="" />
           <h3>Tic Tac Toe</h3>
         </div> */}
        {data.map((stuff) =>(
-         <div>
-
-         <div className="item">
+         <div className='itemContainer'>
+         <div className="item" >
+           
          <img src={stuff.img} alt=""/>
          <a href={stuff.site} target='_blank' rel="noreferrer">{stuff.title}
          <h6>{stuff.desc} </h6>

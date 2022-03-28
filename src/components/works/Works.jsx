@@ -4,10 +4,12 @@ import './works.scss'
 import csm from '../../assets/seal-csm.png'
 import ga from '../../assets/general-assembly_logo.png'
 import CSM from '../../assets/CSM.png'
+import GACert from '../../assets/Cert.png'
+import PDF from '../../assets/GACert.pdf'
 import arrow from '../../assets/arrow.png'
 // import globe from '../../assets/globe.png'
 // import game from '../../assets/tictactoe.png'
-import coming from '../../assets/Coming.png'
+// import coming from '../../assets/Coming.png'
 
 export default function Works() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -31,7 +33,8 @@ export default function Works() {
       desc:
         "Full-stack software engineering immersive student in an intensive, 24-week, 450+ hour program focused on product development fundamentals, object-oriented programming, MVC frameworks, data modeling, and team collaboration strategies. ",
       img:
-        `${coming}`,
+        `${GACert}`,
+      site: `${PDF}`
     },
     // {
     //   id: "3",
